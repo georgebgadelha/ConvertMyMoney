@@ -1,0 +1,13 @@
+<%- include('header') %>
+<div class="result">
+    <% if(error){ %>
+        <%= error %>
+    <% } else { %>
+        <%= quantity %>
+        dollars with the FX Rate of
+        <%= fxrate %> is equals to 
+        <%= exchange %> reais
+    <% } %>
+</div>
+
+<%- include('footer') %>
